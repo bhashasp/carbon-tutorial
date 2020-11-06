@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import logo from './logo.svg';
 import './app.scss';
 import { Route, Switch } from 'react-router-dom';
@@ -11,7 +12,6 @@ class App extends Component {
       <>
         <TutorialHeader />
         <Content>
-          <Button>Button</Button>
           <Switch>
             <Route exact path="/" component={LandingPage} />
             <Route path="/repos" component={RepoPage} />
